@@ -1,7 +1,7 @@
 body{
   height: 100%;
   width: 90%;
-  overflow: hidden;
+  overflow: scroll;
   padding-bottom: 2rem;
 }
 ::-webkit-scrollbar{
@@ -15,6 +15,12 @@ th{
   width: 14rem;
   height: 3rem;
   font-size: 14px;
+}
+@media (max-width: 768px){
+    th{
+        width:8rem;
+        height: 2rem;
+    }
 }
 td{
   height: 2rem;
@@ -40,6 +46,15 @@ label{
   width: 100%;
   gap:20px;
 }
+@media (max-width: 768px){
+    .parentcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:50px;
+    }
+}
 .custom-row{
   position: relative;
   height: 2rem;
@@ -55,6 +70,12 @@ label{
   gap: 10px 10px;
   height: 35%;
   width: 35%;  
+}
+@media (max-width: 768px){
+    .input-container{
+        top: 2rem;
+        transform: translateX(-50%);
+    }
 }
 .btn-container{
     display: flex;
@@ -89,6 +110,11 @@ label{
     width:50%;
     gap: 10px;
 }
+@media (max-width: 768px){
+    .search-in-row{
+        gap: 20px;
+    }
+}
 .table-container{
   height: 60%;
   width: 50%;  
@@ -96,4 +122,12 @@ label{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 768px)
+{
+    .table-container{
+        position: relative;
+        top: 3rem;
+        gap: 30px;
+    }
 }
