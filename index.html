@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="parent" class="parentcontainer">
+      <div class="input-container">
+        <div class="input-in-row">
+          <label>Language: </label>
+          <input
+            id="languageId"
+            type="text"
+            class="custom-input"
+            placeholder="Enter the Language"
+          />
+        </div>
+        <div class="input-in-row">
+          <label>Framework: </label>
+          <input
+            id="frameworkId"
+            type="text"
+            class="custom-input"
+            placeholder="Enter the Framework"
+          />
+        </div>
+        <div class="input-in-row">
+          <label>Years of Experience: </label>
+          <input
+            type="number"
+            id="YearsId"
+            class="custom-input"
+            placeholder="Enter the Years of Experience"
+          />
+        </div>
+        <div class="btn-container">
+          <button id="btn" class="custom-row">Add row</button>
+        </div>
+      </div>
+      <div class="table-container">
+        <div class="search-in-row">
+            <i class="fa-solid fa-search"></i>
+          <input id="search" type="text" placeholder="Search" class="custom-input" />
+        </div>
+        <table>
+          <th>Language</th>
+          <th>Framework</th>
+          <th>Years of Experience</th>
+          <tbody id="tbody">
+            <!-- js code handles it -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>
