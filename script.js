@@ -38,7 +38,7 @@ btn.addEventListener('click', () => {
 
 let search = document.getElementById('search');
 search.addEventListener('input', () => {
-    let text = search.value.trim();
+    let text = search.value.toLowerCase();
     let alltr = document.querySelectorAll('#tbody tr');
     alltr.forEach((c) => {
         let row = c.textContent.toLowerCase();
